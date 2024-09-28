@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBuy</title>
+    <style>
+       
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+       
+        .Navbar-Menu {
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .Navbar-Menu .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .Navbar-Menu .menu img {
+            height: 50px;
+        }
+
+        .Navbar-Menu .menu nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .Navbar-Menu .menu nav a:hover {
+            color: #ff6600;
+        }
+
+        
+        .Home {
+            text-align: center;
+            padding: 130px 20px;
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            flex-grow: 1;
+        }
+
+       
+        .Products {
+            padding: 60px 20px;
+            background-color: #fafafa;
+        }
+
+        .Products h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .Products p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .Products .container-fluid .row .col-md-4 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .Products img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .Products h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .Products h6 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .Products a {
+            text-decoration: none;
+            color: white;
+            background-color: #043c78;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+    <section class="Navbar-Menu" id="Navbar-Menu-Id">
+        <div class="menu">
+            <div class="leftside">
+                <img src="2.png" alt="HomeBuy Logo">
+                <b>HomeBuy.lk</b>
+            </div>
+            <div class="rightside" id="rightside">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="sign up.html">Sign up</a>
+                    <a href="about.html">About</a>
+                    <a href="service.html">Service</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="Home" id="Home-Id">
+        <div class="heading">
+            
+        </div>
+    </section>
+
+   
+    <section class="Products" id="Products">
+        <h1>Our Products</h1>
+        <p>Quality Laptops and Smart Mobiles</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="p.1.jpg" class="img-fluid" alt="Product 1">
+                    <h3>Galaxy s6 Edge Plus <br> 4g LTE with 32gb memory</h3>
+                    <h6>$69.00</h6>
+                    <a href="sign up.html">Order Now</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="p3.jpg" class="img-fluid" alt="Product 2">
+                    <h3>Dell XPS 15 9500 Laptop</h3>
+                    <h6>$1323.00</h6>
+                    <a href="sign up.html">Order Now</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="p.3.jpg" class="img-fluid" alt="Product 3">
+                    <h3>SteelSeries Arctis 5 Gaming Headset</h3>
+                    <h6>$30.00</h6>
+                    <a href="sign up.html">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 HomeBuy.lk. All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

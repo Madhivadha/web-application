@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <style>
+       
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        
+        .Navbar-Menu {
+            background-color: #ffcc00;
+            padding: 10px 20px;
+        }
+
+        .Navbar-Menu .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .Navbar-Menu .menu img {
+            height: 50px;
+        }
+
+        .Navbar-Menu .menu nav .navicon {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+       
+        .Home {
+            text-align: center;
+            padding: 130px 20px;
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .Home .heading h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .Home .heading p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .Home .heading a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        
+        .About-Us {
+            padding: 60px 100px;
+            text-align: center;
+            background-color: #afa8a8;
+        }
+
+        .About-Us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .About-Us p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .About-Us a {
+            text-decoration: none;
+            color: #1d4bd4;
+            font-weight: bold;
+        }
+
+        
+        .Products {
+            padding: 60px 20px;
+            background-color: #fafafa;
+        }
+
+        .Products h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .Products p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .Products .container-fluid .row .col-md-4 {
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+
+        .Products img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .Products h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .Products h6 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .Products a {
+            text-decoration: none;
+            color: white;
+            background-color: #043c78;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+       
+
+        .Feedback {
+            padding: 60px 20px;
+            background-color: #9e928e;
+            text-align: center;
+        }
+
+        .Feedback h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .Feedback p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .Feedback a {
+            text-decoration: none;
+            color: white;
+            background-color: #043c78;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+      
+        .Contact {
+            padding: 60px 20px;
+            background-color: #ccc2c2;
+            text-align: center;
+        }
+
+        .Contact h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .Contact p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .Contact h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: #0095ff;
+            font-size: 35px;
+            margin-left: 10px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu ul li {
+            margin-left: 30px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+
+        .menu ul li a:hover {
+            color: #0095ff;
+        }
+
+       
+        .content {
+            width: 80%;
+            margin: auto;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-top: 5%;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #0095ff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #007acc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    
+    </style>
+</head>
+
+<body>
+   
+    <section class="Navbar-Menu" id="Navbar-Menu-Id">
+        <div class="menu">
+            <div class="leftside">
+                <img src="2.png" alt="HomeBuy Logo">
+                <b>HomeBuy.lk</b>
+            </div>
+            <div class="rightside" id="rightside">
+                <nav class="Icons">
+                    <a href="index.html" class="navicon">Home</a>
+                    <a href="sign up.html" class="navicon">Sign up</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="Home" id="Home-Id">
+        <div class="heading">
+            
+        </div>
+    </section>
+
+
+
+    <div class="content">
+        <h1>Sign Up</h1>
+        <p class="par">Join HOMEBUY.LK today! <br>Fill out the form below to create an account and start shopping.</p>
+        
+       
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <label for="nic">NIC Number:</label>
+            <input type="text" id="nic" name="nic" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+       
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+           
+            const name = document.getElementById("name").value;
+            if (name === "") {
+                alert("Name cannot be empty");
+                event.preventDefault();
+            }
+
+            
+            const email = document.getElementById("email").value;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                event.preventDefault();
+            }
+
+          
+            const phone = document.getElementById("phone").value;
+            const phonePattern = /^\d{10}$/; 
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number");
+                event.preventDefault();
+            }
+
+            
+            const nic = document.getElementById("nic").value;
+            const nicPattern = /^[0-9]{9}[vVxX]$/;
+            if (!nicPattern.test(nic)) {
+                alert("Please enter a valid NIC number");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2024 HomeBuy.lk. All Rights Reserved</p>
+</footer>
+</body>
+
+</html>
